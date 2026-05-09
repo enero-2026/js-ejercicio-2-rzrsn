@@ -1,65 +1,23 @@
-# JS: Filtro Dinámico de Productos
+# Filtro Dinámico de Productos
 
-Aplicar lógica de programación y manipulación del DOM para filtrar datos en tiempo real.
+Este proyecto consiste en una página web que muestra productos y permite filtrarlos en tiempo real por nombre y categoría usando JavaScript.
 
-### Instrucciones
-1. Crea un página (sin frameworks) que muestre una lista de productos y permita filtrarlos dinámamente.
-2. Puedes utilizar el API en https://fakestoreapi.com/ 
+Los productos se cargan desde FakeStore API usando fetch. También agregué un arreglo local como respaldo por si el API no responde.
 
-Debes partir de un arreglo de productos en JavaScript, por ejemplo:
-Ejemplo: 
-```javascript
-const productos = [
-  { nombre: "Laptop", categoria: "Tecnología" },
-  { nombre: "Playera", categoria: "Ropa" },
-  { nombre: "Celular", categoria: "Tecnología" },
-  { nombre: "Zapatos", categoria: "Ropa" }
-];
-```
---- 
+El filtro funciona con:
 
-### Funcionalidades requeridas
-1. Mostrar todos los productos en pantalla
-2. Filtrar productos por:
-Nombre (campo de texto)
-Categoría (elemento select)
-3. Mostrar un mensaje cuando no haya resultados
+* un input de búsqueda
+* un select de categorías
 
+Cuando el usuario escribe o cambia una categoría, se ejecuta una función que usa filter() para encontrar los productos que coinciden y después vuelve a mostrarlos en pantalla dinámicamente sin recargar la página.
 
----
+Si no hay coincidencias, aparece un mensaje indicando que no se encontraron productos.
 
-### Consideraciones
-1. Utiliza el método filter() para manipular datos
-2. Utiliza los eventos para manejar cuando el valor en el campo de texto cambia y la selección en el select
-3. Render dinámico en el DOM (innerHTML o creación de elementos)
-4. Separar:
-lógica de datos
-render de UI
+## Archivos
 
---- 
+* index.html → estructura de la página
+* styles.css → diseño y estilos
+* app.js → lógica del proyecto y filtros
 
-### Consideraciones
-1. La lista debe actualizarse en tiempo real sin redirigir al usuario 
-2. Evita duplicar lógica
-Mantén el código organizado
-
---- 
-
-
-### Uso de IA
-Puedes usar IA para mejorar la estructura del código, debes agregar un archivo PROMPTS.md con el prompt que utilizaste 
-**Uso exclusivo en Github Copilot (revisa el repositorio que crea esta asignación en el apartado de Agentes)**
-
-***Ejemplo de prompt**
-"Optimiza este código JavaScript para hacerlo más limpio y modular"
-
----  
-
-## Entregable
-Archivo HTML
-Archivo CSS
-Archivo JS
-README.md con:
-Explicación de cómo funciona el filtro
-Qué parte fue asistida por IA
-
+## Uso de IA
+Usé IA como apoyo para mejorar la organización del código JS y separar mejor las funciones de filtrado, renderizado y carga de datos. También ayudó a simplificar algunas partes del manejo del DOM.

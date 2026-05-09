@@ -1,0 +1,1 @@
+ayúdame a organizar mejor el código de JS, quiero separar la parte que renderiza los productos y la que carga los datos del API en funciones diferentes, tambien simplifica la parte donde manipulo el DOM 

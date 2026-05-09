@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Filtro de Productos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ 
+  <h1>Tienda de Productos</h1>
+ 
+  <div id="filtros">
+    <input type="text" id="campoBusqueda" placeholder="Buscar producto...">
+    <select id="selectCategoria">
+      <option value="">Todas las categorías</option>
+    </select>
+  </div>
+ 
+  <p id="mensajeSinResultados" style="display:none;">No se encontraron productos.</p>
+ 
+  <div id="contenedorProductos"></div>
+ 
+  <script src="app.js"></script>
+</body>
+</html>
+ 
